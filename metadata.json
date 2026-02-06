@@ -1,0 +1,7 @@
+{
+  "name": "ElderEase – AI Elderly Care & Wellness",
+  "description": "A compassionate AI platform designed for elderly safety, daily care, and wellness featuring fall detection, voice AI, and emergency escalation.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
