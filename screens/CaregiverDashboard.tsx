@@ -47,7 +47,7 @@ const CaregiverDashboard: React.FC<CaregiverDashboardProps> = ({ onResidentSelec
               <div className="p-3 bg-blue-50 text-blue-600 rounded-2xl"><Users /></div>
               <h3 className="font-bold text-slate-800">Total Residents</h3>
             </div>
-            <p className="text-4xl font-black text-slate-900">42</p>
+            <p className="text-4xl font-black text-slate-900">{totalResidents}</p>
           </div>
           <div className="bg-white p-6 rounded-[2rem] shadow-sm border border-slate-100">
             <div className="flex items-center gap-4 mb-4">
