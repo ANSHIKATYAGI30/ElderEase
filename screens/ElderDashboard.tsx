@@ -27,10 +27,26 @@ const ElderDashboard: React.FC<ElderDashboardProps> = ({ resident, onSOS, onFall
     if (!userInput.trim()) return;
     setIsLoading(true);
     setAiResponse("");
-    const result = await getAIResponse(resident, userInput, resident.language);
-    setAiResponse(result);
-    setUserInput("");
-    setIsLoading(false);
+    try {
+  setIsLoading(true);
+  setAiResponse("");
+
+  const result = await getAIResponse(
+    resident,
+    userInput,
+    resident.language
+  );
+
+  setAiResponse(result);
+  setUserInput("");
+} catch (error) {
+  console.error(error);
+  setAiResponse(
+    "Sorry, something went wrong while contacting the AI assistant."
+  );
+} finally {
+  setIsLoading(false);
+}
   };
 
   return (
