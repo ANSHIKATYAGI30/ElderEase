@@ -24,7 +24,7 @@ const ElderDashboard: React.FC<ElderDashboardProps> = ({ resident, onSOS, onFall
 
   const handleAISubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!userInput.trim()) return;
+    if (!userInput.trim() || isLoading) return;
     setIsLoading(true);
     setAiResponse("");
     try {
