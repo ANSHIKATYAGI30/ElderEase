@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Resident, LanguageCode } from '../types';
 import { translations } from '../translations';
-import { Mic, AlertTriangle, User, History, CheckCircle2, ChevronRight, ArrowLeft } from 'lucide-react';
+import {Mic, AlertTriangle, History, CheckCircle2, ChevronRight, ArrowLeft} from "lucide-react";
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import VoiceIndicator from '../components/VoiceIndicator';
 import { getAIResponse } from '../geminiService';
